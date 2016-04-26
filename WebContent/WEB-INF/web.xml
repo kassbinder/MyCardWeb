@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>MyCardWeb</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>UserRemoveServlet</servlet-name>
+		<servlet-class>com.w.card.servlets.UserRemoveServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ShowUserNameServlet</servlet-name>
+		<servlet-class>com.w.card.servlets.ShowUserNameServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AccountRemoveServlet</servlet-name>
+		<servlet-class>com.w.card.servlets.AccountRemoveServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ItemAddServlet</servlet-name>
+		<servlet-class>com.w.card.servlets.ItemAddServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>UserAddServlet</servlet-name>
+		<servlet-class>com.w.card.servlets.UserAddServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AccountAddServlet</servlet-name>
+		<servlet-class>com.w.card.servlets.AccountAddServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AccountTransferServlet</servlet-name>
+		<servlet-class>com.w.card.servlets.AccountTransferServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserRemoveServlet</servlet-name>
+		<url-pattern>/user/remove</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ShowUserNameServlet</servlet-name>
+		<url-pattern>*.html</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AccountRemoveServlet</servlet-name>
+		<url-pattern>/account/remove</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ItemAddServlet</servlet-name>
+		<url-pattern>/item/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UserAddServlet</servlet-name>
+		<url-pattern>/user/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AccountAddServlet</servlet-name>
+		<url-pattern>/account/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AccountTransferServlet</servlet-name>
+		<url-pattern>/account/transfer</url-pattern>
+	</servlet-mapping>
+</web-app>
